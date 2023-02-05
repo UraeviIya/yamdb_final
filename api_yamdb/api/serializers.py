@@ -16,6 +16,7 @@ from .validators import ValidateUsername
 
 class UserSerializer(serializers.ModelSerializer, ValidateUsername):
     """Сериализатор для пользователей."""
+
     email = serializers.EmailField(
         max_length=300, required=True,
         validators=[UniqueValidator(queryset=User.objects.all())])
