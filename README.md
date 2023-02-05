@@ -182,3 +182,4 @@ http://127.0.0.1:8000/redoc/
 
 }
 ```
+[![yamdb_workflow](https://github.com/UraeviIya/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)](https://github.com/UraeviIya/yamdb_final/actions/workflows/yamdb_workflow.yml)
