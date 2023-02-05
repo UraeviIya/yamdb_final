@@ -43,7 +43,7 @@ jobs:
         with:
           context: api_yamdb
           push: true
-          tags: bujhvh/api_yamdb-web:latest 
+          tags: kermitthefrog1/yamdb_final:latest 
   
   deploy:
     runs-on: ubuntu-latest
@@ -67,7 +67,7 @@ jobs:
           echo POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }} >> .env
           echo DB_HOST=${{ secrets.DB_HOST }} >> .env
           echo DB_PORT=${{ secrets.DB_PORT }} >> .env
-          sudo docker pull bujhvh/api_yamdb-web:latest 
+          sudo docker pull kermitthefrog1/yamdb_final:latest 
           sudo docker-compose up -d
   
   send_message:
