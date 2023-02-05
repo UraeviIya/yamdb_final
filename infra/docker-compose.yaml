@@ -1,4 +1,4 @@
-version: '2.0'
+version: '2.1'
 services:
   db:
     image: postgres:13.0-alpine
@@ -7,6 +7,7 @@ services:
     env_file:
       - ./.env
   web:
+    build: .
     image: kermitthefrog1/yamdb_final:latest
     dockerfile: api_yamdb/Dockerfile
     restart: always
