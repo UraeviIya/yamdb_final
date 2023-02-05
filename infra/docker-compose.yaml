@@ -1,4 +1,4 @@
-version: '2.1'
+version: '3.8'
 services:
   db:
     image: postgres:13.0-alpine
@@ -9,7 +9,6 @@ services:
   web:
     build: .
     image: kermitthefrog1/yamdb_final:latest
-    dockerfile: api_yamdb/Dockerfile
     restart: always
     volumes:
       - static_value:/app/static/
@@ -31,3 +30,4 @@ services:
 volumes:
   static_value:
   media_value:
+  db_value:
